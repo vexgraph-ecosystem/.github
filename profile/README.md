@@ -35,10 +35,8 @@ bisectable.
 
 ## The Law
 
-Architecture is governed by a living constitution:
-<p>
-[`preferences.md`](https://github.com/vexgraph-ecosystem/vexspoke/blob/main/preferences.md)
-</p>
+Architecture is governed by a living constitution: [`preferences.md`](https://github.com/vexgraph-ecosystem/vexspoke/blob/main/preferences.md)
+  
 It has Tier 1 memory invariants, <p>Tier 2 object model, <p> and Tier 3 syntactic determinism.
 
 ## Notable non-negotiables:
