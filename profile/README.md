@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com/vex-graph"><img src="https://raw.githubusercontent.com/vex-graph/vex-graph/main/resources/vexgraph-header.png" alt="vexgraph" width="48%"></a>
+  <a href="https://github.com/vex-graph"><img src="https://raw.githubusercontent.com/vex-graph/vex-graph/main/resources/vexgraph.png" alt="vexgraph" width="48%"></a>
   <img src="https://raw.githubusercontent.com/vex-graph/vex-graph/main/resources/ecosystem.png" alt="ecosystem" width="48%">
 </p>
 
