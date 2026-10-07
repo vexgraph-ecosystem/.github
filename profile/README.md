@@ -7,7 +7,13 @@
 My own ecosystem for relentless dogfooding
 
 A vertically integrated, multi-repository systems engineering ecosystem built in
-pure C23. Everything is a pointer. and it will be, conceptually and implementedly.
+C23 with Rust-owned R2 storage and native C processing. Everything is a pointer.
+
+> **Work in progress—not a finished product suite.** Repositories range from
+> implemented slices to partial foundations and source-free blueprints. The R5
+> apps in particular are unfinished: their descriptions are goals, not shipped
+> IDE, DAW, spatial/drawing studio or game-engine capabilities. Consult the
+> [readiness wiki](https://github.com/vexgraph-ecosystem/ecosystem/wiki).
 
 I am a solo developer + I have an AI pair-programming pipeline that treats dense,
 explicit, machine-readable architecture as a first-class artifact. No arrow
@@ -21,12 +27,13 @@ is more stable, and tears down later.
 | Runtime | Repo | Role                                                                    |
 |---------|---|-------------------------------------------------------------------------|
 | **R1**  | [`hotcwap`](https://github.com/vexgraph-ecosystem/hotcwap) | Host: process supervisor, Kernel, OS windows, dynamic hot-loader        |
-| **R2**  | [`vexspoke`](https://github.com/vexgraph-ecosystem/vexspoke) | Behavior: relational memory arena, BitPool, types, dest-last math, sync |
+| **R2**  | [`vexspoke`](https://github.com/vexgraph-ecosystem/vexspoke) | CPU computation, math, algorithms, synchronization and behavior |
+| **R2**  | [`relational-engine`](https://github.com/vexgraph-ecosystem/relational-engine) | Memory/storage, stable row chunks, variable bindings and native C search |
 | **R3**  | [`graphvex`](https://github.com/vexgraph-ecosystem/graphvex) | Driver: Vulkan/WGPU GPU pipelines, meshlets, fonts, SDF raster          |
 | **R3**  | [`api-haven`](https://github.com/vexgraph-ecosystem/api-haven) | Driver: MCP/AI/DB/asset connector surface                               |
 | **R3**  | [`language`](https://github.com/vexgraph-ecosystem/language) | Driver: LSP/grammar dylibs                                              |
 | **R3**  | [`darkbase`](https://github.com/vexgraph-ecosystem/darkbase) | Driver: native vex database store                                       |
-| **R4**  | [`darling-framework`](https://github.com/vexgraph-ecosystem/darling-framework) | Interfaces: retained UI toolkit, scene graphs, compositor               |
+| **R4**  | [`darling-framework`](https://github.com/vexgraph-ecosystem/darling-framework) | Interfaces: widgets, layout, input/focus and host bridges; composition is R3 |
 | **R4**  | [`sesh`](https://github.com/vexgraph-ecosystem/sesh) | Interfaces: session sync, VPS relay                                     |
 | **R5**  | [`semicolon`](https://github.com/vexgraph-ecosystem/semicolon) | Interactables: mini IDE (with big scope xd)                             |
 | **R5**  | [`samplerate`](https://github.com/vexgraph-ecosystem/samplerate) | Interactables: bare-metal DAW                                           |
@@ -34,15 +41,22 @@ is more stable, and tears down later.
 | **R5**  | [`drawling`](https://github.com/vexgraph-ecosystem/drawling) | Interactables: drawing studio                                           |
 | **R5**  | [`anti`](https://github.com/vexgraph-ecosystem/anti) | Interactables: 3D game engine                                           |
 
-Every repository stays buildable standalone and in-tree. Cross-cutting changes
-commit upstream-first (R2 → R3 → R1 → R4 → R5) so every commit is atomic and
-bisectable.
+R2 migration is staged: existing Vexspoke memory/container ABI and its default
+allocator remain until explicit migration and owner proof. No C/Rust atomic
+layout equivalence or automatic schema migration is implied. R1 owns storage
+lifetimes/residency; Graphvex owns GPU shaders/dispatch. R3 may borrow either
+R2 public contract, but that permission is not an implemented dependency.
+
+Standalone and in-tree runtime builds are architectural obligations, not blanket
+readiness claims. Commit dependencies upstream-first (Relational Engine before
+Vexspoke when it consumes that ABI, then R3 → R1 → R4 → R5); per-file commits may
+depend on other records in the same verified work cycle.
 
 ## The Law
 
 Architecture is governed by a living constitution:
 <p>
-[preferences.md](https://github.com/vexgraph-ecosystem/vexspoke/blob/main/preferences.md)
+[preferences.md](https://gist.github.com/vex-graph/4132a6c45cb6d3797c3e8eff2e94035a)
 </p>
 It has Tier 1 memory invariants, <p>Tier 2 object model, <p> and Tier 3 syntactic determinism.
 
