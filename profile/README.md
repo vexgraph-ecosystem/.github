@@ -33,10 +33,11 @@ is more stable, and tears down later.
 | **R3**  | [`api-haven`](https://github.com/vexgraph-ecosystem/api-haven) | Driver: MCP/AI/DB/asset connector surface                               |
 | **R3**  | [`language`](https://github.com/vexgraph-ecosystem/language) | Driver: LSP/grammar dylibs                                              |
 | **R3**  | [`darkbase`](https://github.com/vexgraph-ecosystem/darkbase) | Driver: native vex database store                                       |
+| **R3**  | [`samplerate`](https://github.com/vexgraph-ecosystem/samplerate) | Driver: native audio (CoreAudio/WASAPI/ALSA), DSP graph, render/export |
 | **R4**  | [`darling-framework`](https://github.com/vexgraph-ecosystem/darling-framework) | Interfaces: widgets, layout, input/focus and host bridges; composition is R3 |
 | **R4**  | [`sesh`](https://github.com/vexgraph-ecosystem/sesh) | Interfaces: session sync, VPS relay                                     |
 | **R5**  | [`semicolon`](https://github.com/vexgraph-ecosystem/semicolon) | Interactables: mini IDE (with big scope xd)                             |
-| **R5**  | [`samplerate`](https://github.com/vexgraph-ecosystem/samplerate) | Interactables: bare-metal DAW                                           |
+| **R5**  | [`impedance`](https://github.com/vexgraph-ecosystem/impedance) | Interactables: bare-metal DAW (on the R3 samplerate engine)              |
 | **R5**  | [`darling`](https://github.com/vexgraph-ecosystem/darling) | Interactables: spatial studio                                           |
 | **R5**  | [`drawling`](https://github.com/vexgraph-ecosystem/drawling) | Interactables: drawing studio                                           |
 | **R5**  | [`anti`](https://github.com/vexgraph-ecosystem/anti) | Interactables: 3D game engine                                           |
@@ -54,11 +55,9 @@ depend on other records in the same verified work cycle.
 
 ## The Law
 
-Architecture is governed by a living constitution:
-<p>
-[preferences.md](https://gist.github.com/vex-graph/4132a6c45cb6d3797c3e8eff2e94035a)
-</p>
-It has Tier 1 memory invariants, <p>Tier 2 object model, <p> and Tier 3 syntactic determinism.
+Architecture is governed by a living constitution through
+[preferences.md](https://gist.github.com/vex-graph/4132a6c45cb6d3797c3e8eff2e94035a).
+It has Tier 1 memory invariants, Tier 2 object model, and Tier 3 syntactic determinism.
 
 ## Notable non-negotiables:
 
