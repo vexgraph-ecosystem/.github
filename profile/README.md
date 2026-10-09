@@ -13,7 +13,7 @@ C23 with Rust-owned R2 storage and native C processing. Everything is a pointer.
 > implemented slices to partial foundations and source-free blueprints. The R5
 > apps in particular are unfinished: their descriptions are goals, not shipped
 > IDE, DAW, spatial/drawing studio or game-engine capabilities. Consult the
-> [readiness wiki](https://github.com/vexgraph-ecosystem/ecosystem/wiki).
+> [readiness Gist](https://gist.github.com/vex-graph/6943f92acb931b25dad1073c46da6ce7) — see all [gists](https://gist.github.com/vex-graph).
 
 I am a solo developer + I have an AI pair-programming pipeline that treats dense,
 explicit, machine-readable architecture as a first-class artifact. No arrow
