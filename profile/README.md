@@ -19,6 +19,24 @@ I am a solo developer + I have an AI pair-programming pipeline that treats dense
 explicit, machine-readable architecture as a first-class artifact. No arrow
 sugar. No hidden allocations on steady-state paths. No secrets in the arena.
 
+## Current State
+
+**Implemented:** the repository set, the `b`-driven build entry, the R1–R4
+libraries and drivers at mixed readiness, the shared `tests/` suite, and the
+constitution plus its Gists. **Proven:** macOS builds and the scoped test suites
+recorded in `tests/test-checklist.md`; see the readiness Gist. **Not finished:**
+the R5 applications are shells, scaffolds or designs, and several R3/R4
+repositories are blueprints.
+
+## Scope and Limitations
+
+**Scope:** a vertically integrated C23/Rust ecosystem — R1 host, R2 computation +
+storage, R3 drivers, R4 interfaces, R5 interactables — plus the personal `b` and
+`func` tools. **Deliberately not covered:** no monorepo (each repository is
+independent) and no platform promise beyond the stated floor. **Known limits and
+gaps:** Windows/Linux runtime proof, GPU/audio runtime proof, and application
+completion are outstanding; nothing here is a finished product suite.
+
 ## The Stack in one order: R1 to R5 system
 
 The ecosystem follows a single runtime supervisor order. Lower R boots earlier,
@@ -67,3 +85,10 @@ It has Tier 1 memory invariants, Tier 2 object model, and Tier 3 syntactic deter
 - Dest-last outputs. Two-layer access cap. Symmetric getters/setters.
 - Zero steady-state allocation. Bounded waits on every joined thread.
 - Teardown runs top-down; `Memory_freeAll` is always last.
+
+## Scope and Limitations
+
+This profile describes the **intended** ownership of an unfinished ecosystem.
+Read each repository's own `## Current State` and `## Scope and Limitations`
+before treating any capability as shipped, and consult the readiness Gist and
+`tests/test-checklist.md` for the evidence of record.
