@@ -36,6 +36,7 @@ is more stable, and tears down later.
 | **R3**  | [`samplerate`](https://github.com/vexgraph-ecosystem/samplerate) | Driver: native audio (CoreAudio/WASAPI/ALSA), DSP graph, render/export |
 | **R4**  | [`darling-framework`](https://github.com/vexgraph-ecosystem/darling-framework) | Interfaces: widgets, layout, input/focus and host bridges; composition is R3 |
 | **R4**  | [`sesh`](https://github.com/vexgraph-ecosystem/sesh) | Interfaces: session sync, VPS relay                                     |
+| **R4**  | [`harness`](https://github.com/vexgraph-ecosystem/harness) | Interfaces: the user's own agent (projects/tools/R5 apps)                |
 | **R5**  | [`semicolon`](https://github.com/vexgraph-ecosystem/semicolon) | Interactables: mini IDE (with big scope xd)                             |
 | **R5**  | [`impedance`](https://github.com/vexgraph-ecosystem/impedance) | Interactables: bare-metal DAW (on the R3 samplerate engine)              |
 | **R5**  | [`darling`](https://github.com/vexgraph-ecosystem/darling) | Interactables: spatial studio                                           |
