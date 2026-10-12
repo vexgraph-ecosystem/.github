@@ -21,12 +21,12 @@ sugar. No hidden allocations on steady-state paths. No secrets in the arena.
 
 ## Current State
 
-**Implemented:** the repository set, the `b`-driven build entry, the R1–R4
-libraries and drivers at mixed readiness, the shared `../tests` suite, and the
+**Implemented:** the repository set, the `b`-driven build entry, the R1–R6
+repositories at mixed readiness, the shared `../tests` suite, and the
 constitution plus its Gists. **Proven:** macOS builds and the scoped test suites
 recorded in `../gist/test-checklist.md`; see the readiness Gist. **Not finished:**
-the R5 applications are shells, scaffolds or designs, and several R3/R4
-repositories are blueprints.
+the R5 applications and R6 superapps are shells, scaffolds or blueprints, and
+several R3/R4 repositories are blueprints.
 
 ## Scope and Limitations
 
@@ -56,10 +56,10 @@ is more stable, and tears down later.
 | **R4**  | [`darling-framework`](https://github.com/vexgraph-ecosystem/darling-framework) | Interfaces: widgets, layout, input/focus and host bridges; composition is R3 |
 | **R4**  | [`sesh`](https://github.com/vexgraph-ecosystem/sesh) | Interfaces: session sync, VPS relay                                     |
 | **R4**  | [`harness`](https://github.com/vexgraph-ecosystem/harness) | Interfaces: the user's own agent (projects/tools/R5 apps)                |
-| **R6**  | [`semicolon`](https://github.com/vexgraph-ecosystem/semicolon) | Superapp: IDE workflows, Language/b tooling and future standalone Primeagen integration |
 | **R5**  | [`impedance`](https://github.com/vexgraph-ecosystem/impedance) | Interactables: bare-metal DAW (on the R3 samplerate engine)              |
 | **R5**  | [`darling`](https://github.com/vexgraph-ecosystem/darling) | Interactables: spatial studio                                           |
 | **R5**  | [`drawling`](https://github.com/vexgraph-ecosystem/drawling) | Interactables: drawing studio                                           |
+| **R6**  | [`semicolon`](https://github.com/vexgraph-ecosystem/semicolon) | Superapp: IDE workflows, Language/b tooling and future standalone Primeagen integration |
 | **R6**  | [`anti`](https://github.com/vexgraph-ecosystem/anti) | Superapp: IDE, DAW, drawing and creative/game workflow composition |
 
 R2 migration is staged: existing Vexspoke memory/container ABI and its default
