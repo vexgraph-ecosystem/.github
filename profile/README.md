@@ -44,7 +44,6 @@ The ecosystem follows a single runtime supervisor order. R0 boots first; lower R
 is more stable and tears down later.
 
 | Runtime | Repo | Role |
-
 |---------|---|-------------------------------------------------------------------------|
 | **R0**  | [`lifetime`](https://github.com/vexgraph-ecosystem/lifetime) | Kernel host: process/application lifecycle, lifetimes, native OS windowing, capability gating and memory substrate attestation |
 | **R1**  | [`relational-engine`](https://github.com/vexgraph-ecosystem/relational-engine) | Memory/storage, stable row chunks, variable bindings, cache and native C search |
